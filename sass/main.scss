@@ -1,23 +1,117 @@
 .container {
     background-color: white;
     margin: 50px 0px;
-    border-radius: 5px;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 30px;
 }
-
-.services {}
-
-.skills {}
 
 .about {
     &-me {
         padding: 30px;
         min-width: 850px;
         min-height: 300px;
-        h2{
+
+        h2 {
             text-transform: capitalize;
+            position: relative;
+
+            span {
+                width: 90px;
+                border-bottom: 8px solid $color-line;
+                position: absolute;
+                bottom: -6px;
+            }
         }
-        p{
+
+        p {
             padding-top: 30px;
         }
     }
+}
+
+.progressBar {
+    width: 200px;
+    height: 8px;
+    margin: 30px 0 2px;
+    border-radius: 10px;;
+    background-color: rgb(202, 202, 202);
+    div {
+        height: 8px;
+        background-color: $color-primary;
+        border-radius: 5px 0px 0px 5px;
+    }
+}
+
+.skills {
+    padding: 30px;
+    background-color: #fafafa;
+
+    h3 {
+        text-align: center;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 17px;
+        margin-top: 50px;
+    }
+
+    &-heading {
+        position: relative;
+
+        span {
+            width: 60px;
+            border-bottom: 8px solid $color-line;
+            position: absolute;
+            bottom: -6px;
+        }
+    }
+
+    &-technical {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0px;
+    }
+
+    &-add {
+        display: flex;
+        padding: 20px 0px;
+        justify-content: space-around;
+    }
+
+    &-logo {
+        color: $gray-light;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        &:hover{
+            transform: scale(1.1);
+            transition: ease-in .1s;
+        }
+    }
+}
+
+.technical {
+    &-item {
+       
+    }
+
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        &:hover{
+            transform: scale(1.1);
+            transition: ease-in .2s;
+            border-radius: 5px;
+        }
+    }
+
+    &-name {
+        ion-icon{
+            padding: 0px 10px;
+        }
+        font-weight: 600;
+        font-weight: bold;
+        color: black;
+    }
+
 }

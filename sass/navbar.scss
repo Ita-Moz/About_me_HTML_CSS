@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 30px;
     &-icon {
         color: white;
     }
@@ -16,6 +16,21 @@
         display: flex;
         gap: 20px;
         margin-right: 20px;
+        a{
+            color: $color-primary;
+        }
+        ion-icon{
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        ion-icon:hover{
+            cursor: pointer;
+            transform: scale(1.5);
+            color: white;
+            background-color: $color-primary;
+            transition: ease-in .2s;
+        }
     }
 }
 

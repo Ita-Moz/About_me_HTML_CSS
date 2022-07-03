@@ -1,0 +1,23 @@
+.container {
+    background-color: white;
+    margin: 50px 0px;
+    border-radius: 5px;
+}
+
+.services {}
+
+.skills {}
+
+.about {
+    &-me {
+        padding: 30px;
+        min-width: 850px;
+        min-height: 300px;
+        h2{
+            text-transform: capitalize;
+        }
+        p{
+            padding-top: 30px;
+        }
+    }
+}

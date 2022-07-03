@@ -1,154 +1,93 @@
-<!DOCTYPE html>
 <html lang="en">
-<!-- 31:27 -->
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--==================== UNICONS ====================-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-    <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="./assets/css/styles.css">
-
-    <title>Responsive Portfolio Website</title>
+    <title>ABOUT ME</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
+<!-- sass --watch ./sass/app.scss ./assets/css/style.css -->
 
 <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="" class="nav__logo">Alexa</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <a href="" class="nav__link"><i class="nav__icon uil uil-estate"></i>Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link"><i class="nav__icon uil uil-user"></i>About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link"><i class="nav__icon uil uil-file"></i>Skills</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link"><i class="nav__icon uil uil-cube"></i>Services</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link"><i class="nav__icon uil uil-scenery"></i>Portfolio</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link"><i class="nav__icon uil uil-message"></i>Contact</a>
-                    </li>
-                </ul>
-                <i class="uil uil-times" class="nav__close" id="nav-close"></i>
-            </div>
-            <div class="nav__btns">
-                <div class="nav__toggle" id="nav-toggle"><i class="uil uil-apps"></i></div>
-            </div>
-        </nav>
-    </header>
-
-    <!--==================== MAIN ====================-->
-    <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content gird">
-                    <div class="home__social">
-                        <a href="" class="home__social-icon"><i class="uil uil-facebook"></i></a>
-                        <a href="" class="home__social-icon"><i class="uil uil-linkedin"></i></a>
-                        <a href="" class="home__social-icon"><i class="uil uil-github"></i></a>
-                    </div>
-                    <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                <image class="home__blob-img" href="assets/img/perfil.png"/>
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="home__data">
-                        <h1 class="home__title">Hi,I am Manh</h1>
-                        <h3 class="home__subtitle">Fontend developer</h3>
-                        <p class="home__description">Lorem ipsum dolor sit amet consectetur </p>
-                        <a href="" class="button button--flex">
-                            Contact Me <i class="uil uil-message button__icon"></i>
-                        </a>
-                    </div>
-                    <div class="home__scroll">
-                        <a href="" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll down</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                        </a>
-                    </div>
+    <div class="wrapper">
+        <div class="main-left">
+            <div class="profile">
+                <div class="profile-heading">
+                    <h1 class="profile-name">Herry rooney</h1>
+                    <span class="profile-job">Student</span>
                 </div>
+                <img class="profile-img" src="./assets/img/profile.jpg" alt="">
+                <ul class="profile-information">
+                    <li class="profile-item"></li>
+                    <li class="profile-item">
+                        <p class="profile-paragraph"><span>Name:</span> Lương Văn Mạnh</p>
+                    </li>
+                    <li class="profile-item">
+                        <p class="profile-paragraph"><span>Birthday:</span> 25 July 2001</p>
+                    </li>
+                    <li class="profile-item">
+                        <p class="profile-paragraph"><span>Job:</span> Student</p>
+                    </li>
+                    <li class="profile-item">
+                        <p class="profile-paragraph"><span>Email:</span> luongvanmanh1929@gmail.com</p>
+                    </li>
+                    <li class="profile-item">
+                        <p class="profile-paragraph"><span>Facebook:</span> itaD13</p>
+                    </li>
+                    <a href="" class="btn btn-download">Download CV <ion-icon class="profile-icon-download"
+                            name="arrow-down-circle-outline"></ion-icon></a>
+                </ul>
             </div>
-        </section>
-
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-
-        </section>
-
-        <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
-
-        </section>
-
-        <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
-
-        </section>
-
-        <!--==================== SERVICES ====================-->
-        <section class="services section" id="services">
-
-        </section>
-
-        <!--==================== PORTFOLIO ====================-->
-        <section class="portfolio section" id="portfolio">
-
-        </section>
-
-        <!--==================== PROJECT IN MIND ====================-->
-        <section class="project section">
-
-        </section>
-
-        <!--==================== TESTIMONIAL ====================-->
-        <section class="testimonial section">
-
-        </section>
-
-        <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-
-        </section>
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-
-    </footer>
-
-    <!--==================== SCROLL TOP ====================-->
-
-
-    <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
-
-    <!--==================== MAIN JS ====================-->
-    <script src="./assets/js/main.js"></script>
+        </div>
+        <div class="main-right">
+            <header class="main-header">
+                <nav class="navbar">
+                    <div class="navbar-left">
+                        <ul class="menu">
+                            <li class="menu-item logo-home"><a href=""><i
+                                        class=" navbar-icon fa-solid fa-house"></i></a></li>
+                            <li class="menu-item"><a href="">resume</a></li>
+                            <li class="menu-item"><a href="">portfolio</a></li>
+                            <li class="menu-item"><a href="">blog</a></li>
+                            <li class="menu-item"><a href="">contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-right">
+                        <div class="navbar-media">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <ion-icon name="logo-github"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main class="container">
+                <section class="about-me">
+                    <h2>about me</h2>
+                    <p>Started earnest brother believe an exposed so. Me he believing daughters if forfeited at
+                        furniture. Age again and stuff downs spoke. Late hour new nay able fat each sell. Nor themselves
+                        age introduced frequently use unsatiable devonshire get. They why quit gay cold rose deal park.
+                        One same they four did ask busy. Reserved opinions fat him nay position. Breakfast as zealously
+                        incommode do agreeable furniture. One too nay led fanny allow plate.
+                    </p>
+                    <p>Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to.
+                        Add short water court fat. Her bachelor honoured perceive securing but desirous ham required.
+                        Questions deficient acuteness to engrossed as. Entirely led ten humoured greatest and yourself.
+                        Besides ye country on observe. She continue appetite endeavor she judgment interest the met. For
+                        she surrounded motionless fat resolution may.</p>
+                </section>
+                <section class="services">
+                </section>
+                <section class="skills"></section>
+            </main>
+            <footer class="main-footer"></footer>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,58 @@
+.navbar {
+    min-width: 850px;
+    max-height: 72px;
+    height: 72px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-icon {
+        color: white;
+    }
+
+    &-media {
+        display: flex;
+        gap: 20px;
+        margin-right: 20px;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    list-style: none;
+
+    &-item {
+        &:hover>a {
+            color: $color-secondary;
+            transition: ease-in .2s;
+        }
+
+        &:first-child {
+            background-color: $color-primary;
+            padding: 25.8px;
+            border-radius: 5px 0px 0px 5px;
+        }
+
+        a {
+            color: black;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.logo {
+    &-home {
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-secondary;
+            transition: ease-in .2s;
+        }
+    }
+}

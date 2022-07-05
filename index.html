@@ -9,6 +9,8 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </head>
 <!-- sass --watch ./sass/app.scss ./assets/css/style.css -->
 
@@ -18,7 +20,7 @@
             <div class="profile">
                 <div class="profile-heading">
                     <h1 class="profile-name">Ita-moz</h1>
-                    <span class="profile-job">Student</span>
+                    <span class="profile-job">Web Developer</span>
                 </div>
                 <img class="profile-img" src="./assets/img/logo-name.jpg" alt="">
                 <ul class="profile-information">
@@ -48,12 +50,13 @@
                 <nav class="navbar">
                     <div class="navbar-left">
                         <ul class="menu">
-                            <li class="menu-item logo-home"><a href=""><i
-                                        class=" navbar-icon fa-solid fa-house"></i></a></li>
-                            <li class="menu-item"><a href="">resume</a></li>
-                            <li class="menu-item"><a href="">portfolio</a></li>
-                            <li class="menu-item"><a href="">blog</a></li>
-                            <li class="menu-item"><a href="">contact</a></li>
+                            <li class="menu-item logo-home">
+                                <a href="#"><i class=" navbar-icon fa-solid fa-house"></i></a>
+                            </li>
+                            <li class="menu-item"><a href="#">resume</a></li>
+                            <li class="menu-item"><a href="#">Project</a></li>
+                            <li class="menu-item"><a href="#">blog</a></li>
+                            <li class="menu-item "><a class="contact" href="#container-contact">contact</a></li>
                         </ul>
                     </div>
                     <div class="navbar-right">
@@ -74,29 +77,28 @@
                     </div>
                 </nav>
             </header>
-            <main class="container">
-                <section class="about-me">
 
-                    <h2><span></span>about me</h2>
-                    <p>Started earnest brother believe an exposed so. Me he believing daughters if forfeited at
-                        furniture. Age again and stuff downs spoke. Late hour new nay able fat each sell. Nor themselves
-                        age introduced frequently use unsatiable devonshire get. They why quit gay cold rose deal park.
-                        One same they four did ask busy. Reserved opinions fat him nay position. Breakfast as zealously
-                        incommode do agreeable furniture. One too nay led fanny allow plate.
+            <main class="container container-home">
+                <section class="about-me">
+                    <h2><span></span>Objective</h2>
+                    <p>I am an inquisitive person who loves to seek and discover new knowledge. I hope to become one of the interns and then become an official employee of the company to bring.
+                        Technology solutions for customers. At the same time, I want to experience the company's professional working environment and way of working and improve my professional level.
                     </p>
-                    <p>Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to.
-                        Add short water court fat. Her bachelor honoured perceive securing but desirous ham required.
-                        Questions deficient acuteness to engrossed as. Entirely led ten humoured greatest and yourself.
-                        Besides ye country on observe. She continue appetite endeavor she judgment interest the met. For
-                        she surrounded motionless fat resolution may.</p>
+                    <br><br>
+                    <h2><span></span>Education</h2>
+                    <br>    
+                    <h3>Industrial University of Ho Chi Minh City <span>(Otc 2019 - ?)</span></h3>
+                    <p class="major-desc"><b>Major:</b> Information Technology</p>
                 </section>
                 <section class="skills">
                     <h2 class="skills-heading"><span></span>Skills</h2>
-                    <h3 >Main skills </h3>
+                    <h3>Main skills </h3>
                     <div class="skills-technical">
                         <div class="technical-item">
                             <div class="technical-info">
-                                <p class="technical-name"><ion-icon name="logo-html5"></ion-icon>HTML</p>
+                                <p class="technical-name">
+                                    <ion-icon name="logo-html5"></ion-icon>HTML
+                                </p>
                                 <p class="technical-num">90%</p>
                             </div>
                             <div class="progressBar">
@@ -105,7 +107,9 @@
                         </div>
                         <div class="technical-item">
                             <div class="technical-info">
-                                <p class="technical-name"><ion-icon name="logo-css3"></ion-icon>CSS</p>
+                                <p class="technical-name">
+                                    <ion-icon name="logo-css3"></ion-icon>CSS
+                                </p>
                                 <p class="technical-num">85%</p>
                             </div>
                             <div class="progressBar">
@@ -114,7 +118,9 @@
                         </div>
                         <div class="technical-item">
                             <div class="technical-info">
-                                <p class="technical-name"><ion-icon name="logo-javascript"></ion-icon>Javascript</p>
+                                <p class="technical-name">
+                                    <ion-icon name="logo-javascript"></ion-icon>Javascript
+                                </p>
                                 <p class="technical-num">75%</p>
                             </div>
                             <div class="progressBar">
@@ -124,10 +130,58 @@
                     </div>
                     <h3>Extra skills</h3>
                     <div class="skills-add">
-                        <h2 class="skills-logo nodejs"><ion-icon name="logo-nodejs"></ion-icon>Node JS</h2>
-                        <h2 class="skills-logo mongodb"><ion-icon name="server"></ion-icon>MongoDB</h2>
-                        <h2 class="skills-logo sass"><ion-icon name="logo-sass"></ion-icon>Sass</h2>
-                        <h2 class="skills-logo wordpress"><ion-icon name="logo-wordpress"></ion-icon>Wordpress</h2>
+                        <h2 class="skills-logo nodejs">
+                            <ion-icon name="logo-nodejs"></ion-icon>Node JS
+                        </h2>
+                        <h2 class="skills-logo mongodb">
+                            <ion-icon name="server"></ion-icon>MongoDB
+                        </h2>
+                        <h2 class="skills-logo sass">
+                            <ion-icon name="logo-sass"></ion-icon>Sass
+                        </h2>
+                        <h2 class="skills-logo wordpress">
+                            <ion-icon name="logo-wordpress"></ion-icon>Wordpress
+                        </h2>
+                    </div>
+                </section>
+            </main>
+            <main class="container" id="container-contact">
+                <section class="contact-top">
+                    <h2><span></span>Contact Me</h2>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <ion-icon class="contact-icon" name="location-sharp"></ion-icon>
+                            <h3>Address</h3>
+                            <p>174 Tran Ba Giao Street, Ward 5, Go Vap District, City. Ho Chi Minh</p>
+                        </div>
+                        <div class="contact-item">
+                            <ion-icon class="contact-icon" name="mail-unread-sharp"></ion-icon>
+                            <h3>Email</h3>
+                            <p>luongvanmanh1929@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <ion-icon class="contact-icon" name="call-sharp"></ion-icon>
+                            <h3>Phone</h3>
+                            <p>0961527701</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="content-bottom">
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="First Name">
+                        </div>
+                        <input type="email" placeholder="Your Email">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <button class="btn btn-submit">Send Message <ion-icon class="icon-send" name="send-sharp">
+                            </ion-icon></button>
+                    </div>
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15674.77041177742!2d106.68512543517366!3d10.834819800000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528f62bf302c1%3A0xe98b1a67f150b198!2zUGjDuSBDaMOidSBtaeG6v3UgKE1p4bq_dSBO4buVaSk!5e0!3m2!1svi!2s!4v1657001741476!5m2!1svi!2s"
+                            width="300" height="350" style="border:0px;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </section>
             </main>

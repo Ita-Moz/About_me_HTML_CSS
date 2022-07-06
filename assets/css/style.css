@@ -288,10 +288,6 @@ img {
   padding: 0px 10px;
 }
 
-.active {
-  display: block;
-}
-
 .hidden {
   display: none;
 }
